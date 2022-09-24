@@ -1,6 +1,5 @@
 {
   "name": "portfolio",
-  "homepage": "https://nileshlad09.github.io/portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,7 +41,6 @@
       "last 1 safari version"
     ]
   },
-  "description": "https://nileshlad09.github.io/portfolio",
   "main": "index.js",
   "author": "",
   "license": "ISC"
