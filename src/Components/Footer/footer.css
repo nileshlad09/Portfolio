@@ -1,0 +1,33 @@
+.footerArea {
+  background-color: var(--color6);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  color: var(--color1);
+  -webkit-box-shadow: 3px 5px 32px -3px rgba(255, 253, 253, 0.75);
+    -moz-box-shadow: 3px 5px 32px -3px rgba(255, 238, 238, 0.75); 
+     box-shadow: 3px 5px 32px -3px rgba(255, 255, 255, 0.75);   
+}
+.footerArea .footerArealeft ul li{
+  list-style: none;
+} 
+.connectWithme2 p.para {
+  margin: 20px 0 5px 0;
+}
+.connectWithme2 .socialmedia i {
+  font-size: 2.5rem;
+  margin-right: 15px;
+  color: var(--color1);
+}
+.connectWithme2 .socialmedia i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+@media screen and (max-width:600px){
+  .connectWithme2{
+    display: none;
+  }
+}

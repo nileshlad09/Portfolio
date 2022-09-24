@@ -1,0 +1,59 @@
+.banarArea {
+  background-size: cover;
+  padding: 150px 30px 120px 30px;
+  color: var(--color1);
+}
+.banarArea .intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.banarArea .intro h3 {
+  position: relative;
+  font-weight: 500;
+  padding: 0.2rem 0 0.9rem;
+  font-size: 4rem;
+}
+.banarArea .intro h1 {
+  font-size: 3.5rem;
+}
+.banarArea .intro h1 span {
+  color: var(--color2);
+}
+.banarArea .intro p span {
+  color: var(--color2);
+}
+.connectWithme p.para {
+  margin: 20px 0 5px 0;
+}
+.banarArea .btnGroup{
+  display: flex;
+  align-items: center;
+}
+.connectWithme .socialmedia i {
+  font-size: 2.5rem;
+  margin-right: 15px;
+  color:var(--color1);
+}
+.connectWithme .socialmedia i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+.banarArea .profileImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banarArea .profileImg img {
+  width: 350px;
+  background-color: var(--color3);
+  /* border-radius: 30% 70% 70% 30% / 30% 57% 43% 70%; */
+  border-radius: 50%;
+}
+@media screen and (max-width:800px){
+ .banarArea2 .row{
+    gap: 40px;
+  }
+}

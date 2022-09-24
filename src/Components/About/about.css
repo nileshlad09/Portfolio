@@ -1,0 +1,36 @@
+.aboutmeArea {
+  padding: 150px 30px 120px 30px;
+  color: var(--color1);
+  background-color: var(--color3);
+}
+.aboutmeArea .aboutme .title-text {
+  font-size: 3.5rem;
+}
+.aboutmeArea .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutmeArea .image img {
+  width: 400px;
+  padding: 10px;
+}
+.aboutmeArea .aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--title-color2);  
+}
+.aboutme .introMEtitle span {
+  color: var(--color2);
+}
+
+@media screen and (max-width: 600px) {
+  .aboutmeArea .aboutme .title-text {
+    font: normal bold 3.2rem/ 44px var(--roboto);
+  }
+  .aboutmeArea .image img {
+    width: 335px;
+  }
+}

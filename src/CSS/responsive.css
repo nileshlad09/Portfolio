@@ -1,0 +1,13 @@
+@media screen and (max-width:400px) {
+    .technologyArea .row h2{
+        font: normal 700 1.8rem var(--roboto);
+    }
+    .technologyArea .section .Techtitle{
+        font: normal bold 1.6rem var(--roboto);
+    }
+    .contactmeArea form div input{
+        font: normal 500 16px var(--roboto);
+      }
+}
+
+

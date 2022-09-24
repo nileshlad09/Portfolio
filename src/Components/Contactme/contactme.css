@@ -1,0 +1,64 @@
+.contactmeCont {
+  padding: 150px 30px 0 30px;
+  color: var(--color1);
+}
+.contactmeArea {
+  margin-bottom: 45px;
+  background-color: var(--color3);
+  -webkit-box-shadow: 3px 5px 32px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 5px 32px -3px rgba(0,0,0,0.75); 
+   box-shadow: 3px 5px 32px -3px rgba(0,0,0,0.75);   
+}
+.contactmeArea .contactme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+}
+.contactmeArea .title-text {
+  font-size: 3.5rem;
+  padding-left: 10px;
+}
+.contactmeArea form div {
+  margin: 10px;
+  height: 50px;
+}
+.contactmeArea form div input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  height: 100%;
+  width: 100%;
+  font: normal 500 15px var(--roboto);
+  color: black;
+}
+.contactmeArea form div button {
+  height: 100%;
+  width: 100%;
+  background: var(--color2);
+  border: none;
+  outline: none;
+  color: white;
+  font: normal 500 20px var(--roboto);
+  transition: background 0.5s;
+}
+.contactmeArea form div button:hover {
+  background: transparent;
+  border: 2px solid var(--color2);
+}
+.contactmeArea .image {
+  display: flex;
+  justify-content: center;
+}
+.contactmeArea .image img {
+  width: 400px;
+}
+
+@media screen and (max-width: 600px){
+.contactmeArea .image img {
+    width: 345px;
+}
+.contactmeArea .title-text {
+  font: normal bold 3.2rem/ 44px var(--roboto);
+}
+}

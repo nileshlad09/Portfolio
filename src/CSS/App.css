@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:var(--title-color)
+}
+.gotoTop{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+.gotoTop i{
+  font-size: 3rem;
+  color: var(--color1);
+  cursor: pointer;
+}
+.background{
+  background-color: var(--color6);
+}
+
+
