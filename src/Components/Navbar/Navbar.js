@@ -1,7 +1,7 @@
 import React from 'react'
 import './navbar.css'
 import { Link } from "react-scroll";
-const Navbar = () => {
+const Navbar = ({active}) => {
   return (
     <div className='navbar2 navbar_fixed'>
        <div className="navbarleft">
@@ -10,11 +10,11 @@ const Navbar = () => {
        <div className="navbarright">
          <ul className='navbaritem'>
             <Link
-            smooth={true} duration={500} className="nav-link" to="home">Home</Link>
+            smooth={true} duration={1000} className="nav-link" to="home">Home</Link>
             <Link smooth={true}
-                duration={500}
-                className="nav-link"
-                to="about">About</Link>
+                duration={1000}
+                className= "nav-link"
+                to="about"  >About</Link>
             <Link
             smooth={true}
             duration={1000}

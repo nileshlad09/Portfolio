@@ -5,7 +5,8 @@ import { useEffect, useRef } from "react";
 import resume from "../../Resume/NileshLadResume.pdf";
 import "./banar.css";
 import { Link } from "react-scroll";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Banar = () => {
   const el = useRef(null);
 
@@ -23,7 +24,15 @@ const Banar = () => {
     return () => {
       typed.destroy();
     };
+
+    
   }, []);
+
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
+
+
   return (
     <div className="banarArea2" id="home">
       <section className="banarArea">
@@ -91,42 +100,9 @@ const Banar = () => {
 
 
 
-                {/* <div className="connectWithme">
-                  <p className="para">Coding Profile</p>
-                  <div className="socialmedia">
-                    <a
-                      href="https://www.linkedin.com/in/nilesh-lad-476216216/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a
-                      href="https://github.com/nileshlad09"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fa-brands fa-github-square"></i>
-                    </a>
-                    <a
-                      href="https://www.instagram.com/nileshlad09/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-instagram-square"></i>
-                    </a>
-                    <a
-                      href="https://twitter.com/Nileshlad09"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-twitter-square"></i>
-                    </a>
-                  </div>
-                </div> */}
               </div>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 profileImg ">
+            <div className="col-lg-6 col-md-6 col-sm-12 profileImg " >
               <img src={profilImg} alt="img" />
             </div>
           </div>

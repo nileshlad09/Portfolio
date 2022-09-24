@@ -1,6 +1,12 @@
 import React from "react";
 import "./technology.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Technology = () => {
+  useEffect(()=>{
+    Aos.init({duration:1000})
+   },[])
   const frontEnd = [
     {
       id: "html",
@@ -72,7 +78,7 @@ const Technology = () => {
       <div className="technologyArea" id="skills">
         <h1 className="title-text">Skills</h1>
         <div className="row">
-          <div className="section col-lg-7 col-md-5 col-sm-12">
+          <div className="section col-lg-7 col-md-5 col-sm-12" >
             <h3 className="Techtitle">FrontEnd</h3>
             <div className="box1">
               {frontEnd.map((icon) => {
@@ -99,7 +105,7 @@ const Technology = () => {
                   </div>
 
         <div className="row">
-        <div className="section col-lg-4 col-md-5 col-sm-12">
+        <div className="section col-lg-4 col-md-5 col-sm-12" >
             <h3 className="Techtitle">Tools</h3>
             <div className="box1">
               {tools.map((icon) => {
@@ -112,7 +118,7 @@ const Technology = () => {
             </div>
           </div>
 
-          <div className="section col-lg-7 col-md-5 col-sm-12">
+          <div className="section col-lg-7 col-md-5 col-sm-12" >
             <h3 className="Techtitle">Others</h3>
             <div className="box1">
               {familiar.map((icon) => {

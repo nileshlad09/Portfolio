@@ -10,6 +10,8 @@
 .projectArea .title-text {
   font-size: 3.5rem;
   text-align: center;
+  text-decoration: underline;
+  text-decoration-color: var(--color2);
 }
 .projectArea .projects {
   display: flex;

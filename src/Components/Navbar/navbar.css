@@ -8,6 +8,9 @@
     align-items: center;
     padding: 0 25px;     
 }
+.navbar2 .active{
+    color: var(--color2);
+}
 .navbarleft span{
     font-size: 24px;
     font-weight: 600;

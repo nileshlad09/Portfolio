@@ -9,7 +9,9 @@ import Contactme from "./Components/Contactme/Contactme";
 import About from "./Components/About/About";
 import Technology from "./Components/Technology/Technology";
 import { Link } from "react-scroll";
+import { useEffect } from "react";
 function App() {
+
   return (
     <>
       <div className="background">
