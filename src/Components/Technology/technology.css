@@ -1,7 +1,7 @@
 .technologyArea{
-  margin-top: 150px;
   padding: 20px;
   color: var(--color1);
+  margin: 150px 80px;
 }
 .technologyArea .title-text{
   font-size: 3.5rem;
@@ -62,4 +62,10 @@
   transition: transform .6s;
   cursor: pointer;
   border: 2px solid var(--color1);
+}
+
+@media screen and (max-width:950px) {
+  .technologyArea{
+    margin: 150px 25px;
+  } 
 }

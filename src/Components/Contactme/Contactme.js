@@ -10,7 +10,7 @@ const Contactme = () => {
    },[])
   return (
     <div className="contactmeCont"  id="contact">
-      <div className="contactmeArea container">
+      <div className="contactmeArea ">
         <div className="row">
           <div className="col-lg-6 contactme">
             <h1 className="title-text">Contact Me</h1>

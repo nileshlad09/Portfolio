@@ -74,7 +74,7 @@ const Technology = () => {
   ];
 
   return (
-    <div className="container technologyArea2" >
+    <div className=" technologyArea2" >
       <div className="technologyArea" id="skills">
         <h1 className="title-text">Skills</h1>
         <div className="row">

@@ -1,7 +1,7 @@
 .projectArea {
   padding: 100px 30px 120px 30px;
   color: var(--color1);
-  /* background-color: var(--color3); */
+  margin: 0 80px;
 }
 .projectArea2{
   background-color: var(--color3);
