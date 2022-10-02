@@ -2,7 +2,9 @@
   background-size: cover;
   padding: 150px 30px 120px 30px;
   color: var(--color1);
+  position: relative;
 }
+
 .banarArea .intro {
   display: flex;
   justify-content: center;
@@ -49,8 +51,7 @@
 .banarArea .profileImg img {
   width: 350px;
   background-color: var(--color3);
-  /* border-radius: 30% 70% 70% 30% / 30% 57% 43% 70%; */
-  border-radius: 50%;
+  border-radius: 150px 40px 150px 150px;
 }
 @media screen and (max-width:766px){
  .banarArea2 .row{
