@@ -1,10 +1,8 @@
 .contactmeCont {
-  padding: 150px 30px 0 30px;
   color: var(--color1);
 }
 .contactmeArea {
   margin-bottom: 45px;
-  background-color: var(--color3);
   -webkit-box-shadow: 3px 5px 32px -3px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 5px 32px -3px rgba(0,0,0,0.75); 
    box-shadow: 3px 5px 32px -3px rgba(0,0,0,0.75);   
@@ -13,13 +11,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 20px;
+  /* background-color: var(--color3); */
+  margin: 30px auto;
+  padding: 15px;
 }
 .contactmeArea .title-text {
   font-size: 3.5rem;
   padding-left: 10px;
   text-decoration: underline;
   text-decoration-color: var(--color2);
+  text-align: center;
 }
 .contactmeArea form div {
   margin: 10px;
@@ -48,19 +49,19 @@
   background: transparent;
   border: 2px solid var(--color2);
 }
-.contactmeArea .image {
-  display: flex;
-  justify-content: center;
-}
-.contactmeArea .image img {
-  width: 400px;
-}
 
 @media screen and (max-width: 600px){
-.contactmeArea .image img {
-    width: 345px;
-}
 .contactmeArea .title-text {
   font: normal bold 3.2rem/ 44px var(--roboto);
 }
 }
+
+@media screen and (min-width:600px) {
+  .contactmeArea .contactme{
+      margin: 0 90px; 
+  }
+}
+@media screen and (min-width: 1000px){
+.contactmeArea .contactme {
+    margin: 0 190px;
+}}

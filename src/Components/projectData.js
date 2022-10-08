@@ -9,10 +9,18 @@ export const projectData=[
     },
     {   "id":2,
         "projectName":"Text Analyzer",
-        "tech":"React, Bootstrap",
+        "tech":"React Js, Bootstrap",
         "img":require("../Img/Project/textanalysis.png"),
         "live":"https://nileshlad09.github.io/textanalysis/",
         "source":"https://github.com/nileshlad09/textanalysis",
         "filter":"following"
-    }
+    },
+    {   "id":3,
+        "projectName":"Notebook09",
+        "tech":"MERN, Bootstrap",
+        "img":require("../Img/Project/notebook09.png"),
+        "live":"https://notebook09.netlify.app/login",
+        "source":"https://github.com/nileshlad09/notebook09",
+        "filter":"following"
+    },
 ]

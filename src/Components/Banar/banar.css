@@ -51,7 +51,7 @@
 .banarArea .profileImg img {
   width: 350px;
   background-color: var(--color3);
-  border-radius: 150px 40px 150px 150px;
+  border-radius: 50%;
 }
 @media screen and (max-width:766px){
  .banarArea2 .row{

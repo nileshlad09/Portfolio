@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../../Img/ContactMe/contactme.png";
 import './contactme.css'
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -10,9 +9,8 @@ const Contactme = () => {
    },[])
   return (
     <div className="contactmeCont"  id="contact">
-      <div className="contactmeArea ">
-        <div className="row">
-          <div className="col-lg-6 contactme">
+      <div className="contactmeArea">
+          <div className="contactme">
             <h1 className="title-text">Contact Me</h1>
             <form action="https://formspree.io/f/xnqrajld" method="POST">
               <div className="name" >
@@ -29,11 +27,8 @@ const Contactme = () => {
               </div>
             </form>
           </div>
-          <div className="col-lg-6 image">
-            <img src={image} alt="" />
-          </div>        </div>
+       </div>
       </div>
-    </div>
   );
 };
 

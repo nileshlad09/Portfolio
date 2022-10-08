@@ -9,130 +9,80 @@ const Technology = () => {
    },[])
   const frontEnd = [
     {
-      id: "html",
+      id: "HTML5",
       img: require("../../Img/technology/html-5.svg").default,
     },
     {
-      id: "css",
+      id: "CSS3",
       img: require("../../Img/technology/css3.svg").default,
     },
     {
-      id: "js",
+      id: "JavaScript",
       img: require("../../Img/technology/javascript.svg").default,
     },
     {
-      id: "react",
+      id: "React.js",
       img: require("../../Img/technology/react.svg").default,
     },
     {
-      id: "boot",
+      id: "Bootstrap",
       img: require("../../Img/technology/bootstrap.svg").default,
     },
-  ];
-  const backEnd = [
-    { id: "node", img: require("../../Img/technology/nodejs.svg").default },
     {
-      id: "express",
+      id: "MaterialUI",
+      img: require("../../Img/technology/material-ui.svg").default,
+    },
+    { id: "Node.js", img: require("../../Img/technology/nodejs.svg").default },
+    {
+      id: "Express.js",
       img: require("../../Img/technology/expressjs.svg").default,
     },
     {
-      id: "mongo",
+      id: "MongoDB",
       img: require("../../Img/technology/mongodb.svg").default,
     },
-  ];
-  const tools = [
     {
-      id: "vsc",
+      id: "VS Code",
       img: require("../../Img/technology/vscode.svg").default,
     },
     {
-      id: "github",
+      id: "GitHub",
       img: require("../../Img/technology/github.svg").default,
     },
-  ];
-  const familiar = [
     {
-      id: "c",
+      id: "Git",
+      img: require("../../Img/technology/git.svg").default,
+    },
+    {
+      id: "C",
       img: require("../../Img/technology/Cprogramming.svg").default,
     },
     {
-      id: "cpp",
+      id: "C++",
       img: require("../../Img/technology/CPP.svg").default,
     },
     {
-      id: "py",
-      img: require("../../Img/technology/familierwith/python.svg").default,
-    },
-    {
-      id: "java",
-      img: require("../../Img/technology/familierwith/java.svg").default,
-    },
-    {
-      id: "mysql",
+      id: "MySQL",
       img: require("../../Img/technology/familierwith/mysql.svg").default,
     },
   ];
-
+  
   return (
-    <div className=" technologyArea2" >
       <div className="technologyArea" id="skills">
-        <h1 className="title-text">Skills</h1>
-        <div className="row">
-          <div className="section col-lg-7 col-md-5 col-sm-12" >
-            <h3 className="Techtitle">FrontEnd</h3>
-            <div className="box1">
+          <div className="section" >
+           <h1 className="title-text">Skills</h1>
+           <div className="section2">
               {frontEnd.map((icon) => {
                 return (
                   <div className="icons" key={icon.id}>
                     <img src={icon.img} alt="" width={"40px"} />
+                    <span>{icon.id}</span>
                   </div>
                 );
               })}
-            </div>
           </div>
-          <div className="section col-lg-4 col-md-5 col-sm-12">
-            <h3 className="Techtitle">Backend</h3>
-            <div className="box1">
-              {backEnd.map((icon) => {
-                return (
-                  <div className="icons" key={icon.id}>
-                    <img src={icon.img} alt="" width={"40px"} />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-                  </div>
-
-        <div className="row">
-        <div className="section col-lg-4 col-md-5 col-sm-12" >
-            <h3 className="Techtitle">Tools</h3>
-            <div className="box1">
-              {tools.map((icon) => {
-                return (
-                  <div className="icons" key={icon.id}>
-                    <img src={icon.img} alt="" width={"40px"} />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="section col-lg-7 col-md-5 col-sm-12" >
-            <h3 className="Techtitle">Others</h3>
-            <div className="box1">
-              {familiar.map((icon) => {
-                return (
-                  <div className="icons" key={icon.id}>
-                    <img src={icon.img} alt="" width={"40px"} />
-                  </div>
-                );
-              })}
-            </div>
           </div>
         </div>
-      </div>
-    </div>
   );
 };
 
