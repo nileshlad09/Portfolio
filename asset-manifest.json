@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b18b06e2.css",
-    "main.js": "/Portfolio/static/js/main.4ece3b02.js",
+    "main.css": "/Portfolio/static/css/main.f98945a9.css",
+    "main.js": "/Portfolio/static/js/main.65ecffce.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/movielibrary.png": "/Portfolio/static/media/movielibrary.63d32019e129abc1008f.png",
     "static/media/textanalysis.png": "/Portfolio/static/media/textanalysis.652303e35691f1727553.png",
+    "static/media/profile.png": "/Portfolio/static/media/profile.cb7a3c385f3ceba67182.png",
     "static/media/NileshLadResume.pdf": "/Portfolio/static/media/NileshLadResume.7453d662816e1398f8e1.pdf",
-    "static/media/bg2.png": "/Portfolio/static/media/bg2.d857624c8c0685a9bdcb.png",
     "static/media/notebook09.png": "/Portfolio/static/media/notebook09.bef680b4e068f7b01da9.png",
     "static/media/aboutme.png": "/Portfolio/static/media/aboutme.8fee4d5ea6b6e17ee2a0.png",
     "static/media/github.svg": "/Portfolio/static/media/github.a2eafb2af9a1dcc15adc5435778e9625.svg",
@@ -25,12 +25,12 @@
     "static/media/css3.svg": "/Portfolio/static/media/css3.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html-5.svg": "/Portfolio/static/media/html-5.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/material-ui.svg": "/Portfolio/static/media/material-ui.fd510ed8518b192069590b04e2e6348a.svg",
-    "main.b18b06e2.css.map": "/Portfolio/static/css/main.b18b06e2.css.map",
-    "main.4ece3b02.js.map": "/Portfolio/static/js/main.4ece3b02.js.map",
+    "main.f98945a9.css.map": "/Portfolio/static/css/main.f98945a9.css.map",
+    "main.65ecffce.js.map": "/Portfolio/static/js/main.65ecffce.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b18b06e2.css",
-    "static/js/main.4ece3b02.js"
+    "static/css/main.f98945a9.css",
+    "static/js/main.65ecffce.js"
   ]
 }
