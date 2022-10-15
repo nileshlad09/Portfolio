@@ -1,0 +1,53 @@
+.SkillSection {
+  /* background-color: var(--color3); */
+  padding: 190px 0;
+  color: var(--color2);
+  background: linear-gradient(90deg, var(--color1) 60%, var(--color4) 60%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.SkillSection h1{
+    font-size: 50px;
+}
+.SkillSection .skills2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.SkillSection .skillbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+  background-color: var(--color3);
+  border-radius: 20px;
+  margin: 0 20px;
+}
+.SkillSection .skillbox .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--color4);
+  color: var(--color2);
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+}
+.SkillSection .skillbox .icons:hover{
+    border: 2px solid var(--color1);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+  .SkillSection{
+    background:var(--color1);
+  } 
+}

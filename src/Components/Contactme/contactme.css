@@ -10,9 +10,7 @@
 .contactmeArea .contactme {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* background-color: var(--color3); */
-  margin: 30px auto;
+  align-items: center;
   padding: 15px;
 }
 .contactmeArea .title-text {
@@ -21,6 +19,9 @@
   text-decoration: underline;
   text-decoration-color: var(--color2);
   text-align: center;
+}
+.contactmeArea form{
+  width: 500px;
 }
 .contactmeArea form div {
   margin: 10px;
@@ -56,12 +57,18 @@
 }
 }
 
-@media screen and (min-width:600px) {
-  .contactmeArea .contactme{
-      margin: 0 90px; 
+@media screen and (max-width:520px) {
+  .contactmeArea .contactme form{
+      width: 400px; 
+  }
+}
+@media screen and (max-width:420px) {
+  .contactmeArea .contactme form{
+      width: 300px; 
   }
 }
 @media screen and (min-width: 1000px){
 .contactmeArea .contactme {
-    margin: 0 190px;
-}}
+     margin: 0 190px; 
+}
+}

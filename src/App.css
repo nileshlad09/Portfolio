@@ -1,0 +1,79 @@
+:root{
+ --color1: #ff4d00;
+ --color2: #ffffff;
+ --color3: #000000;
+ --color4: #1e1e1e;
+}
+button.btn{
+  border-radius: 5px;
+  width: 130px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--color2);
+}
+button.btn1{
+  background: var(--color1);
+  border: none;
+}
+button.btn2:hover,
+button.btn1:hover{
+  background: transparent;
+  border: 2px solid var(--color2);
+  color: var(--color2);
+}
+button.btn2 {
+  border: 2px solid var(--color2);
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+a{
+  color: var(--color2);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--color2);
+  text-decoration: none;
+}
+.row{
+--bs-gutter-x:0;
+margin: 0 3%;
+}
+.gotoTop{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+.gotoTop i{
+  font-size: 3rem;
+  color: var(--color2);
+  cursor: pointer;
+}
+.sidenavbar{
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 30px;
+  height: 90px;
+} 
+.sidenavbar a{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  padding: 0;
+}
+@media screen and (max-width:400px) {
+  button.btn{
+    width: 95px
+  } 
+}

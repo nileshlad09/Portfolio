@@ -1,10 +1,10 @@
 .footerArea {
-  background-color: var(--color6);
+  background-color: var(--color3);
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100px;
-  color: var(--color1);
+  color: var(--color2);
   -webkit-box-shadow: 3px 5px 32px -3px rgba(255, 253, 253, 0.75);
     -moz-box-shadow: 3px 5px 32px -3px rgba(255, 238, 238, 0.75); 
      box-shadow: 3px 5px 32px -3px rgba(255, 255, 255, 0.75);   
@@ -18,7 +18,7 @@
 .connectWithme2 .socialmedia i {
   font-size: 2.5rem;
   margin-right: 15px;
-  color: var(--color1);
+  color: var(--color2);
 }
 .connectWithme2 .socialmedia i:hover {
   cursor: pointer;

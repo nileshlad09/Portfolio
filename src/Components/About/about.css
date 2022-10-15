@@ -1,36 +1,46 @@
-.aboutmeArea {
-  padding: 150px 30px 120px 30px;
-  color: var(--color1);
-  background-color: var(--color3);
+.AboutSection {
+  background: linear-gradient(90deg, var(--color4) 60%, var(--color1) 60%);
+  padding: 80px 0;
 }
-.aboutmeArea .aboutme .title-text {
-  font-size: 3.5rem;
+.AboutSection .row {
+  display: flex;
+  align-items: center;
 }
-.aboutmeArea .image {
+.AboutSection .introimg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.aboutmeArea .image img {
-  width: 400px;
-  padding: 10px;
+.AboutSection .introimg img {
+  width: 469px;
 }
-.aboutmeArea .aboutme {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  color: var(--title-color2);  
+.AboutSection .intro {
+  background-color: var(--color3);
+  color: #ffffff;
+  padding: 30px;
 }
-.aboutme .introMEtitle span {
-  color: var(--color2);
+.AboutSection .intro h1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 51px;
 }
-
-@media screen and (max-width: 600px) {
-  .aboutmeArea .aboutme .title-text {
-    font: normal bold 3.2rem/ 44px var(--roboto);
+.AboutSection .intro span {
+  color: #ff4d00;
+}
+.AboutSection .intro p {
+  font-size: 18px;
+  line-height: 24px;
+}
+.AboutSection .row{
+  gap: 50px;
+}
+@media screen and (max-width:500px) {
+  .AboutSection .introimg img {
+    width: 80%;
   }
-  .aboutmeArea .image img {
-    width: 335px;
-  }
+}
+@media screen and (max-width:990px) {
+.AboutSection{
+  background: var(--color4);
+}
 }

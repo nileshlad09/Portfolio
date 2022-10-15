@@ -1,60 +1,137 @@
-.banarArea {
-  background-size: cover;
-  padding: 150px 30px 120px 30px;
-  color: var(--color1);
+.BanarSection {
+  background-color: var(--color3);
+  width: 100%;
+  padding-top: 120px;
   position: relative;
 }
-
-.banarArea .intro {
+.BanarSection::after {
+  content: "";
+  position: absolute;
+  background: rgba(17, 17, 17, 0.68);
+  width: 60%;
+  height: 419px;
+  left: 25%;
+  top: 106px;
+  z-index: 0;
+}
+.BanarSection .intro {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
 }
-.banarArea .intro h3 {
+.BanarSection .intro .intro2 .iam {
+  background-color: var(--color1);
+  width: 150px;
+  height: 45px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color2);
   position: relative;
-  font-weight: 500;
-  padding: 0.2rem 0 0.9rem;
-  font-size: 4rem;
+  margin-bottom: 10px;
 }
-.banarArea .intro h1 {
-  font-size: 3.5rem;
+.BanarSection .intro .intro2 .iam::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 45%;
+  bottom: -20%;
+  background-color: var(--color1);
+  transform: rotate(45deg);
 }
-.banarArea .intro h1 span {
+.BanarSection .intro2 h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
   color: var(--color2);
 }
-.banarArea .intro p span {
+.BanarSection .intro2 p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
   color: var(--color2);
+}
+
+.BanarSection .profile {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+.BanarSection .profile .boxContainer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.BanarSection .profile .boxContainer img {
+  width: 80px;
+}
+.BanarSection .profile .box{
+  background: var(--color4);
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:  0px 0px 8px black;
+}
+.BanarSection .profile .box1,
+.BanarSection .profile .box3 {
+  width: 100px;
+  height: 100px;
+}
+.BanarSection .profile .box2 {
+  width: 110px;
+  height: 110px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+.BanarSection .row{
+  margin: 0 15%;
 }
 .connectWithme p.para {
   margin: 20px 0 5px 0;
 }
-.banarArea .btnGroup{
-  display: flex;
-  align-items: center;
-}
 .connectWithme .socialmedia i {
   font-size: 2.5rem;
   margin-right: 15px;
-  color:var(--color1);
+  color: var(--color2);
 }
 .connectWithme .socialmedia i:hover {
   cursor: pointer;
   transform: scale(1.2);
   transition: 0.3s;
 }
-.banarArea .profileImg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.banarArea .profileImg img {
-  width: 350px;
-  background-color: var(--color3);
-  border-radius: 50%;
-}
-@media screen and (max-width:766px){
- .banarArea2 .row{
-    gap: 40px;
+@media screen and (max-width:770px) {
+ .BanarSection::after {
+    display: none;
   }
+  
+}
+@media screen and (max-width:500px) {
+  .BanarSection .profile .boxContainer{
+    display: none;
+  }
+  /* .BanarSection::after {
+    display: none;
+  } */
+  .profileimage{
+    width: 80%;
+  }
+  .BanarSection .row{
+    margin: 0 10%;
+  }
+  .BanarSection .intro{
+     justify-content: center;
+  }
+}
+@media screen and (max-width:1000px) {
+  .BanarSection .profile .box{
+    display: none;
+  } 
 }

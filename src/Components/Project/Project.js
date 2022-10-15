@@ -1,17 +1,10 @@
-import React from "react";
-// import movieLibraryImg from '../Img/Project/movielibrary.png'
-import {projectData} from '../projectData'
-import './projects.css'
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import React from 'react'
+import './project.css'
+import {projectData} from './ProjectData'
+const Project = () => {
 
-const Projects = () => {
-  useEffect(()=>{
-    Aos.init({duration:1000})
-   },[])
   return (
-    <div className="projectArea" id="project">
+    <div className='ProjectSection' id='project'>
       <div className="projectArea2">
       <h1 className="title-text ">Recent Projects</h1>
       <div className="projects my-5">
@@ -27,10 +20,10 @@ const Projects = () => {
               </ul>
             </div>
             <div className="btnGroup">
-            <button  className="button secondary-button">
+            <button  className="btn btn1">
               <a href={pro.live}  target="_blank">Live</a>
             </button>
-            <button  className=" button secondary-button2">
+            <button  className="btn btn2">
               <a href={pro.source}  target="_blank">GitHub</a>
             </button>
             </div>
@@ -41,7 +34,7 @@ const Projects = () => {
       </div>
     </div>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Project

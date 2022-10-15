@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footerArealeft">
         <ul>
           <li><i className="fa-solid fa-envelope"></i> Gmail: nileshlad871@gmail.com</li>
-          <li><i className="fa-solid fa-phone"></i>Phone No: +91 9702341172</li>
+          <li><i className="fa-solid fa-phone"></i> Phone No: +91 9702341172</li>
         </ul>
       </div>
       <div className="connectWithme2">

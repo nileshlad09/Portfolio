@@ -1,12 +1,6 @@
 import React from "react";
-import "./technology.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-const Technology = () => {
-  useEffect(()=>{
-    Aos.init({duration:1000})
-   },[])
+import "./skill.css";
+const Skill = () => {
   const frontEnd = [
     {
       id: "HTML5",
@@ -66,13 +60,13 @@ const Technology = () => {
       img: require("../../Img/technology/familierwith/mysql.svg").default,
     },
   ];
-  
   return (
-      <div className="technologyArea" id="skills">
-          <div className="section" >
-           <h1 className="title-text">Skills</h1>
-           <div className="section2">
-            {frontEnd.map((icon) => {
+    <div className="SkillSection" id="skills">
+        <div className="row">
+          <div className="skills2 col-lg-7 col-md-12 col-sm-12">
+            <h1>Skills</h1>
+            <div className="skillbox">
+              {frontEnd.map((icon) => {
                 return (
                   <div className="icons " key={icon.id}>
                     <img src={icon.img} alt="" width={"40px"} />
@@ -80,11 +74,12 @@ const Technology = () => {
                   </div>
                 );
               })}
-              
+            </div>
           </div>
-          </div>
+          <div className="col-lg-8 col-md-12 col-sm-12"></div>
         </div>
+      </div>
   );
 };
 
-export default Technology;
+export default Skill;
