@@ -46,5 +46,8 @@
   },
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "netlify-cli": "^12.0.11"
+  }
 }
