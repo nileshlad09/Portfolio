@@ -10,7 +10,7 @@ const Project = () => {
       <div className="projects my-5">
         {projectData.map((pro)=>{
          return(  
-         <div className={`card ${pro.filter}`} key={pro.id} style={{ width: "30rem" }} data-aos="zoom-in">
+         <div className={`card ${pro.filter}`} key={pro.id} style={{ width: "30rem" }} data-aos={`${pro.anim}`}>
           <img src={pro.img} className="card-img-top" alt="..." />
           <div className="card-body">
             <h3 className="card-title project-title">{pro.projectName}</h3>
@@ -21,10 +21,10 @@ const Project = () => {
             </div>
             <div className="btnGroup">
             <button  className="btn btn1">
-              <a href={pro.live}  target="_blank">Live</a>
+              <a href={pro.live} rel="noreferrer noopener" target="_blank">Live</a>
             </button>
             <button  className="btn btn2">
-              <a href={pro.source}  target="_blank">GitHub</a>
+              <a href={pro.source} rel="noreferrer noopener"  target="_blank">GitHub</a>
             </button>
             </div>
           </div>

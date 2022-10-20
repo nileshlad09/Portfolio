@@ -6,7 +6,9 @@ import Project from "./Components/Project/Project";
 import Footer from "./Components/Footer/Footer";
 import { Link } from "react-scroll";
 
+
 function App() {
+
   return (
     <>
       <Banar />

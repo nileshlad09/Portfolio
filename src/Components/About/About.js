@@ -1,16 +1,21 @@
 import React from "react";
 import "./about.css";
-import about from "../../Img/ContactMe/aboutme.png";
+import about from "../../Img/aboutme.png";
 import { Link } from "react-scroll";
 import resume from '../../Resume/NileshLadResume.pdf'
+import AOS from "aos";
 const About = () => {
+  AOS.init({
+    duration: 1000,
+    delay: 100,
+  });
   return (
-    <div className="AboutSection" id="about">
-      <div className="row">
+    <div className="AboutSection" style={{"overflowX": "hidden"}} id="about">
+      <div className="row" >
         <div className="introimg col-lg-5 col-md-12 col-sm-12">
           <img src={about} alt="" />
         </div>
-        <div className="intro col-lg-6 col-md-12 col-sm-12">
+        <div data-aos="fade-left" className="intro col-lg-6 col-md-12 col-sm-12">
           <h1>LET ME INTRODUCE <br />
           <span> MYSELF </span></h1>
           <p>
@@ -29,7 +34,7 @@ const About = () => {
             carry never give up attitude.
           </p>
           <div className="btnBox">
-              <button className="btn btn1"><a href={resume} target="_blank">Resume</a> </button>
+              <button className="btn btn1"><a href={resume} rel="noreferrer noopener" target="_blank">Resume</a> </button>
               <button className="btn btn2"><Link to="projects">Projects</Link></button>
             </div>
         </div>

@@ -63,7 +63,7 @@ const Skill = () => {
   return (
     <div className="SkillSection" id="skills">
         <div className="row">
-          <div className="skills2 col-lg-7 col-md-12 col-sm-12">
+          <div data-aos="fade-up" className="skills2 col-lg-6 col-md-12 col-sm-12">
             <h1>Skills</h1>
             <div className="skillbox">
               {frontEnd.map((icon) => {
@@ -76,7 +76,9 @@ const Skill = () => {
               })}
             </div>
           </div>
-          <div className="col-lg-8 col-md-12 col-sm-12"></div>
+          <div className="techImg col-lg-5 col-md-12 col-sm-12">
+            {/* <img src={tech} alt="" /> */}
+          </div>
         </div>
       </div>
   );

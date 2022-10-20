@@ -1,16 +1,24 @@
 .BanarSection {
   background-color: var(--color3);
-  width: 100%;
   padding-top: 120px;
   position: relative;
+}
+
+.BanarSection .btnBox .btn1{
+  background-color: var(--color3);
+}
+.BanarSection .btnBox .btn1:hover{
+  background-color: transparent;
 }
 .BanarSection::after {
   content: "";
   position: absolute;
-  background: rgba(17, 17, 17, 0.68);
-  width: 60%;
+  /* background: rgba(17, 17, 17, 0.68); */
+  background: var(--color1);
   height: 419px;
-  left: 25%;
+  left: 0;
+  right: 0;
+  margin: 0 120px;
   top: 106px;
   z-index: 0;
 }
@@ -23,7 +31,7 @@
   z-index: 1;
 }
 .BanarSection .intro .intro2 .iam {
-  background-color: var(--color1);
+  background-color: var(--color3);
   width: 150px;
   height: 45px;
   border: none;
@@ -41,20 +49,19 @@
   height: 20px;
   left: 45%;
   bottom: -20%;
-  background-color: var(--color1);
+  background-color: var(--color3);
   transform: rotate(45deg);
 }
 .BanarSection .intro2 h2 {
-  font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 3.5rem;
   line-height: 61px;
   color: var(--color2);
 }
 .BanarSection .intro2 p {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.5rem;
   line-height: 22px;
   color: var(--color2);
 }
@@ -64,7 +71,7 @@
   justify-content: center;
   z-index: 1;
 }
-.BanarSection .profile .boxContainer{
+.BanarSection .profile .boxContainer {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -72,13 +79,13 @@
 .BanarSection .profile .boxContainer img {
   width: 80px;
 }
-.BanarSection .profile .box{
+.BanarSection .profile .box {
   background: var(--color4);
   border-radius: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow:  0px 0px 8px black;
+  box-shadow: 0px 0px 8px black;
 }
 .BanarSection .profile .box1,
 .BanarSection .profile .box3 {
@@ -91,8 +98,8 @@
   margin-left: 80px;
   margin-bottom: 50px;
 }
-.BanarSection .row{
-  margin: 0 15%;
+.BanarSection .row {
+  margin: 0 14%;
 }
 .connectWithme p.para {
   margin: 20px 0 5px 0;
@@ -107,31 +114,39 @@
   transform: scale(1.2);
   transition: 0.3s;
 }
-@media screen and (max-width:770px) {
- .BanarSection::after {
+@media screen and (max-width: 770px) {
+  .BanarSection::after {
     display: none;
   }
-  
+  .BanarSection .intro .intro2 .iam {
+    background-color: var(--color1);
+  }
+  .BanarSection .intro .intro2 .iam::after {
+    background-color: var(--color1);
+  }
+  .BanarSection .btnBox .btn1{
+    background-color: var(--color1);
+  }
 }
-@media screen and (max-width:500px) {
-  .BanarSection .profile .boxContainer{
+@media screen and (max-width: 500px) {
+  .BanarSection .profile .boxContainer {
     display: none;
   }
   /* .BanarSection::after {
     display: none;
   } */
-  .profileimage{
+  .profileimage {
     width: 80%;
   }
-  .BanarSection .row{
+  .BanarSection .row {
     margin: 0 10%;
   }
-  .BanarSection .intro{
-     justify-content: center;
+  .BanarSection .intro {
+    justify-content: center;
   }
 }
-@media screen and (max-width:1000px) {
-  .BanarSection .profile .box{
+@media screen and (max-width: 1000px) {
+  .BanarSection .profile .box {
     display: none;
-  } 
+  }
 }

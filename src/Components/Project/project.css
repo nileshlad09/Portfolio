@@ -29,4 +29,9 @@
     margin-bottom: 10px;
     padding: 0;
 }
+@media screen and (max-width: 400px){
+.ProjectSection button.btn {
+    width: 75px;
+}
+}
 
